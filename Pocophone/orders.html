@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bulma/css/bulma.css">
+  
+  <title>Продажи</title>
+
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+
+}
+
+header {
+  background-color: #8696FE;
+  color: #fff;
+  padding: 10px;
+}
+
+h1 {
+  font-weight: 600;
+  color:#fff;
+  font-size:30px;
+}
+a {
+  text-decoration:none;
+  color:#fff;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #ddd;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+nav ul li a:hover {
+  background-color: #ddd;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  background-color: #8696FE;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+thead th {
+  background-color: #f5f5f5;
+}
+
+tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+tbody td:nth-child(1) {
+  width: 50px;
+}
+
+tbody td:nth-child(2) {
+  width: 100px;
+}
+
+tbody td:nth-child(3) {
+  width: 120px;
+}
+
+tbody td:nth-child(4) {
+  width: 200px;
+}
+
+tbody td:nth-child(5) {
+  width: 150px;
+}
+
+footer {
+  margin-top: 120px;
+background: #8696FE;
+  padding: 20px 0;
+  text-align: center;
+}
+  </style>
+
+</head>
+<body>
+  <header>
+    <a href="index.html"><h1 style="margin: 0px 120px;">Кабинет управления менеджера</h1></a>
+  </header>
+  
+  <nav>
+    <ul>
+      <li style="margin-left: 120px; "><a href="index.html">Главная</a></li>
+      <li><a href="orders.html">Продажи</a></li>
+      <li><a href="#">Настройки</a></li>
+      <li><a href="#">Выход</a></li>
+    </ul>
+  </nav>
+  
+  <main style="margin: 0px 120px; width:300px; display:flex;">
+   <aside class="menu">
+  <ul class="menu-list">
+    <li>
+      <a>Продажи</a>
+    </li>
+        <li><a class="is-active">Заказы</a></li>
+        <li><a>Быстрые заказы</a></li>
+        <li><a>Отмененные</a></li>
+    </ul>
+</aside>
+
+
+<table style="margin-left: 50px;">
+  <thead>
+    <tr>
+      <th>Номер</th>
+      <th>Дата</th>
+      <th>Статус</th>
+      <th>Товары</th>
+      <th>Покупатель</th>
+      <th>Телефон</th>
+      <th>Заказ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>01.01.2023</td>
+      <td>Ожидание</td>
+      <td>Poco X5</td>
+      <td>Иванов Иван</td>
+      <td>79805673456</td>
+      <td>#245</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>02.01.2023</td>
+      <td>Отправлено</td>
+      <td>Смартфон, Наушники</td>
+      <td>Петрова Анна</td>
+      <td>89087064552</td>
+      <td>#555</td>
+    </tr>
+     <tr>
+      <td>3</td>
+      <td>01.06.2023</td>
+      <td>Задерживается</td>
+      <td>Смартфон</td>
+      <td>Третьякова Параша</td>
+      <td>89087039807</td>
+      <td>#908</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>21.05.2022</td>
+      <td>На складе</td>
+      <td>Смартфон</td>
+      <td>Терентьев Олег</td>
+      <td>79225442211</td>
+      <td>122</td>
+    </tr>
+     <tr>
+      <td>5</td>
+      <td>25.05.2023</td>
+      <td>Готово к выдаче</td>
+      <td>Смартфон</td>
+      <td>Карцев Данил</td>
+      <td>89023457890</td>
+      <td>#304</td>
+    </tr>
+     <tr>
+      <td>6</td>
+      <td>15.04.2023</td>
+      <td>Готово к выдаче</td>
+      <td>Смартфон</td>
+      <td>Шапельский Иван</td>
+      <td>89066778991</td>
+      <td>#355</td>
+    </tr>
+     <tr>
+      <td>7</td>
+      <td>05.12.2022</td>
+      <td>На складе</td>
+      <td>Смартфон</td>
+      <td>Федотов Максим</td>
+      <td>89087020012</td>
+      <td>#401</td>
+    </tr>
+
+  </tbody>
+</table>
+
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 ООО "ООО" Pocophone компания. Все права защищены.</p>
+</footer>
+</body>
+</html>

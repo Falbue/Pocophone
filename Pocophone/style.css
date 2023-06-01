@@ -1,0 +1,249 @@
+
+/*Стили для всей страницы*/
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Inter';
+}
+
+/*Отступ */
+.navbar {
+	margin:10px 120px;
+}
+
+/*Изменение цвета поиска и скругление */
+  .has-border-purple {
+    border: 2px solid #EFE9FF;
+    border-radius: 5px;
+  }
+
+/*Изменение цвета "Поиск" */
+.input::placeholder {
+    color: #8696FE;
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+
+.container {
+	flex: 1; 
+  margin-left: 120px; 
+  margin-top: 70px; 
+  margin-right: 120px;
+}
+/*Изменение цвета поиска, когда вводишь что-то*/
+  .has-text-custom {
+    color: #FF0000; /* Измените значение на желаемый цвет текста */
+  }
+
+/*Слайдер*/
+ .slider {
+  position: relative;
+  width: 964px;
+  height: 444px;
+  overflow: hidden;
+  margin-left: 61px;
+}
+
+  .slider img {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+  .slider img.active {
+  display: block;
+}
+
+  .slider .prev,
+  .slider .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 50px;
+        height: 50px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        text-align: center;
+        line-height: 50px;
+        cursor: pointer;
+        }
+
+.slider .prev {
+left: 0;
+}
+
+.slider .next {
+right: 0;
+}
+
+.main {
+	display: flex; 
+	margin: 20px 120px;
+} 
+
+
+
+
+.p1 {
+font-weight: 600;
+font-size: 24px;
+}
+
+.p2 {
+font-weight: 400;
+font-size: 24px;
+}
+
+.panel {
+	width: 400px; height: 500px;
+}
+.change-button {
+  width: 130px;
+  height: 51px;
+  background: #8696FE;
+  border-radius: 8px;
+}
+
+.text-button {
+	color:#fff;
+	font-weight: 600;
+	font-size: 24px;
+}
+
+
+footer {
+  margin-top: 120px;
+  background: #8696FE;
+  padding: 20px 0;
+  text-align: center;
+}
+
+
+.h1 {
+font-weight: 600;
+font-size: 36px;
+}
+
+
+.h2 {
+font-weight: 400;
+font-size: 36px;
+}
+
+
+@media (max-width: 768px) {
+.navbar-menu {
+    display: none;
+  }
+
+.navbar-burger {
+    display: block;
+  }
+
+  .navbar-menu.is-active {
+  display: block;
+  }
+
+.slider {
+    width: 100%;
+    height: 70%;
+    margin-left: 0;
+    margin-bottom: 50px;
+  }
+
+
+
+.slider img {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.slider img.active {
+  display: block;
+}
+
+  .slider .prev,
+  .slider .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 50px;
+        height: 50px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        text-align: center;
+        line-height: 50px;
+        cursor: pointer;
+        }
+
+.slider .prev {
+  left: 0;
+}
+
+.slider .next {
+  right: 0;
+}
+  
+/* Добавляем отступы в адаптивном режиме */
+.navbar {
+  margin: 10px 20px;
+}
+
+.main {
+	margin: 0px 20px;
+	display: flex;
+	flex-direction: column;
+}
+  .panel {
+  width: 90%;
+  margin: 0px 20px;
+  }
+
+.p1 {
+  font-weight: 600;
+  font-size: 10px;
+}
+
+.p2 {
+  font-weight: 400;
+  font-size: 10px;
+}
+
+
+
+
+.container {
+	margin: 0px 20px;
+
+}
+
+.change-button {
+  width: 65px;
+  height: 25.5px;
+  background: #8696FE;
+  border-radius: 5px;
+}
+
+.text-button {
+	color:#fff;
+	font-weight: 600;
+	font-size: 10px;
+}
+
+footer {
+	margin-top: 50px;
+	width: 100%;
+	background: #8696FE;
+	padding: 10px 0;
+  text-align: center;
+}
+
+.fff {
+	font-weight: 400;
+  font-size: 10px;
+}
+
+}

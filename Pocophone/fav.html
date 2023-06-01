@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="bulma/css/bulma.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Избранное</title>
+
+    <style>
+  body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #f5f5f5;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+}
+
+.product h2 {
+  margin-top: 10px;
+}
+
+.product p {
+  color: #888;
+}
+
+.product a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #f5f5f5;
+  text-decoration: none;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.product a:hover {
+  background-color: #ddd;
+}
+</style>
+</head>
+<body>
+
+
+<nav class="navbar" aria-label="main navigation" style="margin:10px 120px">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="index.html">
+      <img src="img/logo.svg" alt="Логотип нашей компании ООО Pocophone" width="191" height="42">
+    </a>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item">Избранное</a>
+      <a href="fav.html" class="navbar-item">Корзина</a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">Покупателям</a>
+
+        <div class="navbar-dropdown">
+          <a class="navbar-item">
+            Условия продажи товаров в интернет-магазине
+          </a>
+
+          <a class="navbar-item">
+            Как оплатить и получить
+          </a>
+
+          <a class="navbar-item">
+            Обмен, возврат и ремонт
+          </a>
+
+          <a class="navbar-item">
+            Обзоры
+          </a>
+
+          <a class="navbar-item">
+            Подборки
+          </a>
+
+          <hr class="navbar-divider">
+
+          <a class="navbar-item">
+            Часто задаваемые вопросы
+          </a>
+
+        </div>
+      </div>
+
+
+       <a href="admin.html" class="navbar-item" style="margin-left: 80px; ">Администратор</a>
+         <a href="orders.html" class="navbar-item" style="margin-left: 10px; ">Менеджер</a>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button" style="background-color:#8696FE">
+            <strong>Регистрация</strong>
+          </a>
+          <a class="button is-light">
+            Вход
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+  <header>
+    <h1>Мои избранные товары</h1>
+  </header>
+
+  <main>
+    <div class="product">
+      <img src="img/image4c.png" alt="Product 1">
+      <h2>Redmi Note 12</h2>
+      <p>16 990 ₽</p>
+      <a href="#">Подробнее</a>
+    </div>
+
+    <div class="product">
+      <img src="img/image1c.png" alt="Product 2">
+      <h2>Xiaomi 12T</h2>
+      <p>36 990 ₽</p>
+      <a href="Xiaomi-12T.html">Подробнее</a>
+    </div>
+
+    <!-- Добавьте другие товары по аналогии -->
+  </main>
+
+  <footer>
+    <p>&copy; 2023 ООО "ООО" Pocophone компания. Все права защищены.</p>
+</footer>
+
+</body>
+</html>
