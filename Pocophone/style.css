@@ -247,3 +247,10 @@ footer {
 }
 
 }
+
+.anim > p{
+  transition: 100ms; 
+}
+.anim > p:hover{
+  color: blue;
+}
